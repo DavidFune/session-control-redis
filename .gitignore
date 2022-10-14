@@ -1,2 +1,5 @@
 venv
 src/certificates
+__pycache__
+data
+test.py

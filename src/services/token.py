@@ -3,11 +3,10 @@ import hashlib
 
 
 def get_private_key():
-    return open("certificates/jwtRS256.key", "rb").read()
-
+    return open("src/certificates/jwtRS256.key", "rb").read()
 
 def get_public_key():
-    return open("certificates/jwtRS256.key.pub", "rb").read()
+    return open("src/certificates/jwtRS256.key.pub", "rb").read()
 
 
 def create(user, exp=30):
