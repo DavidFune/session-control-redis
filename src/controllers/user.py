@@ -21,4 +21,12 @@ def login(user):
         r.set(user.id, sha_token, ex=30)
         return _token
 
+def logout(user):
+    if r.get(user.id) == None:
+        return 'User not found'
+    elif r.get(user.id) != None:
+        r.delete(user.id)
+        return 'logout success'
+
+
 
