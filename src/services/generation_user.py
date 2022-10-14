@@ -4,14 +4,15 @@ import random
 import redis
 import json
 
-keys = ['id-4558', 'id-8272', 'id-5069', 'id-7369']
+def genaration_users(key):
 
-fake = Faker()
+    fake = Faker()
 
-for key in keys:
-  users = {
-    "id": key,
-    "nome": fake.name(),
-    "email": fake.ascii_safe_email(),
-    "password": fake.password(length=8)
-  }
+    user = {
+      "id": key,
+      "nome": fake.name(),
+      "email": fake.ascii_safe_email(),
+      "password": fake.password(length=8)
+    }
+
+    return user
