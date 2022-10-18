@@ -1,8 +1,4 @@
 from faker import Faker
-import time
-import random
-import redis
-import json
 
 def genaration_users(key):
 

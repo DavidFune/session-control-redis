@@ -3,7 +3,7 @@ import json
 from services import token
 
 
-r = redis.Redis(host="localhost", port=6379, db=0, password="")
+r = redis.Redis(host="172.22.0.2", port=6379, db=0, password="")
 
 def login(user):
     user_id = user['id']
